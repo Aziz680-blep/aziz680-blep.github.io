@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://aziz680-blep.github.io/sitemap.xml
