@@ -2,95 +2,28 @@
 <html lang="ar" dir="rtl">
 <head>
 
-<script async
-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4566413972220783"
-crossorigin="anonymous"></script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>عالم الذكاء الاصطناعي | مقالات وأدوات AI باللغة العربية</title>
 
-<meta name="description" content="عالم الذكاء الاصطناعي يقدم أحدث المقالات والأخبار وأفضل أدوات الذكاء الاصطناعي باللغة العربية لتعلم واستخدام AI بسهولة.">
+<meta name="description" content="عالم الذكاء الاصطناعي يقدم أحدث المقالات والأخبار وأفضل أدوات الذكاء الاصطناعي باللغة العربية.">
 
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="favicon.png">
 
-<meta property="og:title" content="عالم الذكاء الاصطناعي">
-<meta property="og:description" content="أفضل مقالات وأدوات الذكاء الاصطناعي باللغة العربية.">
-<meta property="og:image" content="https://aziz680-blep.github.io/favicon.png">
-<meta property="og:url" content="https://aziz680-blep.github.io/">
-<meta property="og:type" content="website">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aziz680-blep.github.io/favicon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4566413972220783"
+crossorigin="anonymous"></script>
 
 <style>
 
-
-  .search-box{
-    text-align:center;
-    margin:20px 0;
-}
-
-.search-box input{
-    width:85%;
-    max-width:500px;
-    padding:12px 18px;
-    font-size:16px;
-    border:2px solid #2196f3;
-    border-radius:30px;
-    outline:none;
-}
-
-.search-box input:focus{
-    border-color:#0d47a1;
-    box-shadow:0 0 10px rgba(33,150,243,.3);
-}
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-  <script>
-    
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
 
-const noResult = document.createElement("p");
-noResult.textContent = "❌ لم يتم العثور على أي مقال.";
-noResult.style.textAlign = "center";
-noResult.style.display = "none";
-noResult.style.fontWeight = "bold";
-document.body.appendChild(noResult);
-
-searchInput.addEventListener("keyup", function () {
-    const value = this.value.toLowerCase();
-    let found = false;
-
-    cards.forEach(card => {
-        const text = card.textContent.toLowerCase();
-
-        if (text.includes(value)) {
-            card.style.display = "block";
-            found = true;
-        } else {
-            card.style.display = "none";
-        }
-    });
-
-    noResult.style.display = found ? "none" : "block";
-});
-</script>
-
-  <button id="topBtn" title="العودة إلى الأعلى">⬆</button>
-
-</body>
-</html>
-  
-  
-  
+body{
 font-family:Arial,sans-serif;
 background:#f5f5f5;
 color:#222;
@@ -104,7 +37,7 @@ text-align:center;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
 margin:10px;
 font-weight:bold;
@@ -112,14 +45,34 @@ font-weight:bold;
 
 header{
 background:#2563eb;
-color:white;
+color:#fff;
 text-align:center;
 padding:40px 20px;
+}
+
+header img{
+width:100px;
+margin-bottom:15px;
 }
 
 header h1{
 font-size:34px;
 margin-bottom:10px;
+}
+
+.search-box{
+text-align:center;
+margin:25px;
+}
+
+.search-box input{
+width:85%;
+max-width:500px;
+padding:12px;
+font-size:16px;
+border:2px solid #2196f3;
+border-radius:30px;
+outline:none;
 }
 
 section{
@@ -133,7 +86,7 @@ margin-bottom:25px;
 }
 
 .card{
-background:white;
+background:#fff;
 width:90%;
 max-width:700px;
 margin:20px auto;
@@ -155,7 +108,7 @@ margin-bottom:20px;
 display:inline-block;
 padding:12px 25px;
 background:#2563eb;
-color:white;
+color:#fff;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
@@ -167,85 +120,58 @@ background:#1d4ed8;
 
 footer{
 background:#222;
-color:white;
+color:#fff;
 text-align:center;
 padding:30px;
 margin-top:40px;
 }
 
 footer a{
-color:white;
+color:#fff;
 text-decoration:none;
 margin:0 8px;
 }
 
-footer a:hover{
-text-decoration:underline;
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+left:20px;
+padding:12px 15px;
+border:none;
+border-radius:50%;
+background:#2563eb;
+color:#fff;
+font-size:20px;
+cursor:pointer;
 }
 
 </style>
 
-  <script>
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = function () {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-};
-
-topBtn.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
-  </script>
-
 </head>
 
-  
-
 <body>
-  <script>
-const topBtn = document.getElementById("topBtn");
-
-window.onscroll = function () {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-};
-
-topBtn.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
-  </script>
-
 <nav>
-
 <a href="index.html">الرئيسية</a>
-<a href="about.html">من نحن</a>
-<a href="privacy.html">سياسة الخصوصية</a>
-<a href="terms.html">شروط الاستخدام</a>
-<a href="contact.html">اتصل بنا</a>
-
 </nav>
 
 <header>
 
+<img src="logo.png" alt="شعار عالم الذكاء الاصطناعي">
+
 <h1>🤖 عالم الذكاء الاصطناعي</h1>
 
 <p>اكتشف أفضل أدوات الذكاء الاصطناعي والمقالات التعليمية في مكان واحد.</p>
-  <img src="logo.png" alt="شعار عالم الذكاء الاصطناعي" width="100">
 
 </header>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="🔍 ابحث عن مقال...">
+</div>
+
+<section>
+
+<h2>🛠️ أدوات الذكاء الاصطناعي</h2>
 
 <div class="card">
 <h3>🤖 ChatGPT</h3>
@@ -261,7 +187,7 @@ topBtn.onclick = function () {
 
 <div class="card">
 <h3>🎨 Canva AI</h3>
-<p>اكتشف أحدث أدوات التصميم المدعومة بالذكاء الاصطناعي.</p>
+<p>اكتشف أدوات التصميم المدعومة بالذكاء الاصطناعي.</p>
 <a href="https://www.canva.com/ai/" target="_blank" class="btn">افتح Canva AI</a>
 </div>
 
@@ -277,11 +203,8 @@ topBtn.onclick = function () {
 <a href="https://www.perplexity.ai" target="_blank" class="btn">افتح Perplexity</a>
 </div>
 
-</>
-
 <h2>📚 مقالات الذكاء الاصطناعي</h2>
-
-<div class="card">
+  <div class="card">
 <h3>📖 ما هو الذكاء الاصطناعي؟</h3>
 <p>تعرف على مفهوم الذكاء الاصطناعي وكيف يعمل وأهم استخداماته.</p>
 <a href="article1.html" class="btn">قراءة المقال</a>
@@ -292,52 +215,58 @@ topBtn.onclick = function () {
 <p>تعرف على نشأة الذكاء الاصطناعي وكيف تطور حتى أصبح جزءًا من حياتنا اليومية.</p>
 <a href="article2.html" class="btn">قراءة المقال</a>
 </div>
-  <div class="card">
-  <h3>🧠 الشبكات العصبية الاصطناعية</h3>
-  <p>تعرف على مفهوم الشبكات العصبية وكيف تساعد الذكاء الاصطناعي على التعلم واتخاذ القرارات.</p>
-  <a href="article8.html" class="btn">قراءة المقال</a>
-  </div>
-  <div class="card">
-  <h3>📊 ما هو التعلم الآلي؟</h3>
-  <p>تعرف على مفهوم التعلم الآلي وكيف يساعد الأنظمة على التعلم من البيانات وتحسين أدائها.</p>
-  <a href="article7.html" class="btn">قراءة المقال</a>
-  </div>
-<div class="card">
-  <h3>⭐ أفضل أدوات الذكاء الاصطناعي</h3>
-  <p>تعرف على أشهر أدوات الذكاء الاصطناعي واستخدامات كل منها.</p>
-  <a href="article9.html" class="btn">قراءة المقال</a>
-</div>
-  <div class="card">
-  <h3>🏥 الذكاء الاصطناعي في الطب</h3>
-  <p>تعرف على كيفية استخدام الذكاء الاصطناعي في تشخيص الأمراض وتحسين الرعاية الصحية.</p>
-  <a href="article6.html" class="btn">قراءة المقال</a>
-  </div>
-  <div class="card">
-  <h3>⚖️ مخاطر الذكاء الاصطناعي وأخلاقياته</h3>
-  <p>تعرف على أبرز التحديات الأخلاقية والمخاطر المرتبطة باستخدام الذكاء الاصطناعي.</p>
-  <a href="article10.html" class="btn">قراءة المقال</a>
-  </div>
 
-  <div class="card">
-  <h3>🎓 الذكاء الاصطناعي في التعليم</h3>
-  <p>اكتشف كيف يساعد الذكاء الاصطناعي الطلاب والمعلمين في تحسين العملية التعليمية.</p>
-  <a href="article5.html" class="btn">قراءة المقال</a>
-  </div>
-<div class="card">
-  <h3>🚀 مستقبل الذكاء الاصطناعي</h3>
-  <p>تعرف على أبرز التوقعات حول مستقبل الذكاء الاصطناعي وتأثيره على حياتنا.</p>
-  <a href="article4.html" class="btn">قراءة المقال</a>
-</div>
 <div class="card">
 <h3>🧠 أنواع الذكاء الاصطناعي</h3>
 <p>تعرف على الأنواع المختلفة للذكاء الاصطناعي واستخدامات كل نوع.</p>
 <a href="article3.html" class="btn">قراءة المقال</a>
 </div>
-  
+
+<div class="card">
+<h3>🚀 مستقبل الذكاء الاصطناعي</h3>
+<p>تعرف على أبرز التوقعات حول مستقبل الذكاء الاصطناعي وتأثيره على حياتنا.</p>
+<a href="article4.html" class="btn">قراءة المقال</a>
+</div>
+
+<div class="card">
+<h3>🎓 الذكاء الاصطناعي في التعليم</h3>
+<p>اكتشف كيف يساعد الذكاء الاصطناعي الطلاب والمعلمين في تحسين العملية التعليمية.</p>
+<a href="article5.html" class="btn">قراءة المقال</a>
+</div>
+
+<div class="card">
+<h3>🏥 الذكاء الاصطناعي في الطب</h3>
+<p>تعرف على كيفية استخدام الذكاء الاصطناعي في تشخيص الأمراض وتحسين الرعاية الصحية.</p>
+<a href="article6.html" class="btn">قراءة المقال</a>
+</div>
+
+<div class="card">
+<h3>📊 ما هو التعلم الآلي؟</h3>
+<p>تعرف على مفهوم التعلم الآلي وكيف يساعد الأنظمة على التعلم من البيانات.</p>
+<a href="article7.html" class="btn">قراءة المقال</a>
+</div>
+
+<div class="card">
+<h3>🧠 الشبكات العصبية الاصطناعية</h3>
+<p>تعرف على مفهوم الشبكات العصبية وكيف تساعد الذكاء الاصطناعي على التعلم.</p>
+<a href="article8.html" class="btn">قراءة المقال</a>
+</div>
+
+<div class="card">
+<h3>⭐ أفضل أدوات الذكاء الاصطناعي</h3>
+<p>تعرف على أشهر أدوات الذكاء الاصطناعي واستخدامات كل منها.</p>
+<a href="article9.html" class="btn">قراءة المقال</a>
+</div>
+
+<div class="card">
+<h3>⚖️ مخاطر الذكاء الاصطناعي وأخلاقياته</h3>
+<p>تعرف على أبرز التحديات الأخلاقية والمخاطر المرتبطة باستخدام الذكاء الاصطناعي.</p>
+<a href="article10.html" class="btn">قراءة المقال</a>
+</div>
+
 </section>
 
 <footer>
-
 <p>جميع الحقوق محفوظة © 2026 عالم الذكاء الاصطناعي</p>
 
 <p>تم تصميم الموقع بواسطة Abdelaziz</p>
@@ -348,10 +277,42 @@ topBtn.onclick = function () {
 <a href="terms.html">شروط الاستخدام</a> |
 <a href="contact.html">اتصل بنا</a>
 </p>
-
 </footer>
+
+<button id="topBtn" title="العودة إلى الأعلى">⬆</button>
+
+<script>
+const searchInput=document.getElementById("searchInput");
+const cards=document.querySelectorAll(".card");
+
+searchInput.addEventListener("keyup",function(){
+const value=this.value.toLowerCase();
+
+cards.forEach(card=>{
+card.style.display=card.textContent.toLowerCase().includes(value)
+?"block":"none";
+});
+});
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+topBtn.style.display=
+(document.documentElement.scrollTop>300)?"block":"none";
+};
+
+topBtn.onclick=function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+</script>
 
 </body>
 </html>
+
+
+
+
+
+
 
 
